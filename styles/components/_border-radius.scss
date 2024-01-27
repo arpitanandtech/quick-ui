@@ -1,0 +1,25 @@
+@use "sass:math";
+
+.radius-1 {
+  border-radius: math.div($base, 2);
+}
+
+.radius-2 {
+  border-radius: $base;
+}
+
+.radius-3 {
+  border-radius: $base * 1.5;
+}
+
+.radius-4 {
+  border-radius: $base * 2;
+}
+
+.radius-5 {
+  border-radius: $base * 3;
+}
+
+.radius-half {
+  border-radius: 50%;
+}

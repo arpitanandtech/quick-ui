@@ -1,0 +1,48 @@
+.input {
+  width: 100%;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  @include base-font();
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: map-get($colors-list, "text");
+  outline: 0;
+  padding: 0.5rem;
+  border: 1.5px solid map-get($colors-list, "muted");
+  &:focus {
+    border: 1.5px solid map-get($colors-list, "primary");
+    box-shadow: 0px 0px 9px 3px rgba(95, 117, 238, 0.27);
+  }
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-primary {
+  border: 1.5px solid map-get($colors-list, "primary");
+  box-shadow: 0px 0px 9px 3px rgba(95, 117, 238, 0.27);
+}
+
+.input-danger {
+  border: 1.5px solid map-get($colors-list, "danger");
+}
+
+.input-info {
+  border: 1.5px solid map-get($colors-list, "info");
+}
+
+.input-success {
+  border: 1.5px solid map-get($colors-list, "success");
+}
+
+.input-warning {
+  border: 1.5px solid map-get($colors-list, "warning");
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Select                                   */
+/* -------------------------------------------------------------------------- */

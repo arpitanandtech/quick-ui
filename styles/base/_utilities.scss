@@ -1,0 +1,119 @@
+@use "sass:list";
+
+@function value($multiplier) {
+  @return $multiplier * $base;
+}
+
+@for $i from 1 through 20 {
+  .m-#{$i} {
+    margin: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .mt-#{$i} {
+    margin-top: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .mb-#{$i} {
+    margin-bottom: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .mr-#{$i} {
+    margin-right: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .ml-#{$i} {
+    margin-left: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .p-#{$i} {
+    padding: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .pt-#{$i} {
+    padding-top: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .pb-#{$i} {
+    padding-bottom: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .pr-#{$i} {
+    padding-right: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .pl-#{$i} {
+    padding-left: value($i);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Flex                                    */
+/* -------------------------------------------------------------------------- */
+
+$space: "flex-start", "flex-end", "space-between", "space-evenly", "center";
+$align: "center", "stretch", "flex-start", "flex-end";
+$wrap: "nowrap", "wrap";
+
+@each $s in $space {
+  .justify-#{$s} {
+    justify-content: #{$s};
+  }
+}
+
+@each $a in $align {
+  .align-#{$a} {
+    align-items: #{$a};
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@for $i from 1 through 20 {
+  .rg-#{$i} {
+    row-gap: value($i);
+  }
+}
+
+@for $i from 1 through 20 {
+  .cg-#{$i} {
+    column-gap: value($i);
+  }
+}
+
+@for $i from 1 through 10 {
+  .column-count-#{$i} {
+    column-count: #{$i};
+  }
+}
+
+@each $w in $wrap {
+  .wrap-#{$w} {
+    flex-wrap: #{$w};
+  }
+}

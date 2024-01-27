@@ -1,0 +1,12 @@
+@function multiplier($i) {
+  @return $base * $i;
+}
+
+@for $i from 4 through 10 {
+  .avatar-#{$i} {
+    width: multiplier($i);
+    height: multiplier($i);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

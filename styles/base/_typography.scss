@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+$font-family: "Poppins", sans-serif;
+
+@mixin base-font {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.h1 {
+  @include base-font();
+  font-size: 6rem;
+}
+
+.h2 {
+  @include base-font();
+  font-size: 4rem;
+}
+
+.h3 {
+  @include base-font();
+  font-size: 3rem;
+}
+
+.h4 {
+  @include base-font();
+  font-size: 2.5rem;
+}
+
+.h5 {
+  @include base-font();
+  font-size: 2rem;
+}
+
+.h6 {
+  @include base-font();
+  font-size: 1.5rem;
+}
+.sub-heading {
+  @include base-font();
+  font-size: 1.25rem;
+}
+
+.body-text {
+  @include base-font();
+  font-size: 1rem;
+}
+
+.sub-title {
+  @include base-font();
+  font-size: 0.875rem;
+}
+
+.text-caption {
+  @include base-font();
+  font-size: 0.75rem;
+}

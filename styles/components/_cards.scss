@@ -1,0 +1,8 @@
+@mixin card-sample {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-sample {
+  @include card-sample();
+}

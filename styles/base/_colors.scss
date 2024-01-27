@@ -1,0 +1,14 @@
+@use "sass:list";
+
+$colors: "primary", "secondary", "muted", "support", "success", "info",
+  "warning", "danger", "text";
+
+@each $color in $colors {
+  .color-#{$color} {
+    color: map-get($colors-list, $color);
+  }
+
+  .bg-color-#{$color} {
+    background-color: map-get($colors-list, $color);
+  }
+}

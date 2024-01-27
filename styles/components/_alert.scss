@@ -1,0 +1,73 @@
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  min-width: 20rem;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background-color: lighten(map-get($colors-list, "info"), 30);
+  &-right {
+    display: flex;
+    align-items: center;
+  }
+  &-right:after {
+    content: "\00d7";
+    display: inline-block;
+    color: map-get($colors-list, "info");
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: map-get($colors-list, "info");
+    & p:first-child {
+      font-weight: 600;
+      font-size: 14px;
+      font-family: $font-family;
+    }
+    & p:not(:first-child) {
+      font-weight: 400;
+      font-size: 13px;
+      font-family: $font-family;
+    }
+  }
+}
+
+.alert-success {
+  background-color: lighten(map-get($colors-list, "success"), 30);
+
+  & > .alert-left {
+    color: map-get($colors-list, "success");
+  }
+
+  & > .alert-right:after {
+    color: map-get($colors-list, "success");
+  }
+}
+
+.alert-danger {
+  background-color: lighten(map-get($colors-list, "danger"), 30);
+
+  & > .alert-left {
+    color: map-get($colors-list, "danger");
+  }
+
+  & > .alert-right:after {
+    color: map-get($colors-list, "danger");
+  }
+}
+
+.alert-warning {
+  background-color: lighten(map-get($colors-list, "warning"), 30);
+
+  & > .alert-left {
+    color: map-get($colors-list, "warning");
+  }
+
+  & > .alert-right:after {
+    color: map-get($colors-list, "warning");
+  }
+}

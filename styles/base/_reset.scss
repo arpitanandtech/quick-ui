@@ -1,0 +1,66 @@
+// _reset.scss
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+// Remove list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Remove default styles for links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Remove default styles for buttons
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+// Remove default styles for form elements
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+// Remove outline on active links
+a:active,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
